@@ -1,0 +1,265 @@
+/* Scheduling calendar mockups — shared structure */
+
+.schedule-mockup .schedule-intro {
+  margin-bottom: var(--space-xl);
+}
+
+.schedule-mockup .schedule-intro .lead {
+  margin-bottom: 0;
+}
+
+.schedule-style-nav {
+  margin-bottom: var(--space-2xl);
+  padding: var(--space-m);
+  background: var(--color-accent-soft);
+  border-radius: 0.5rem;
+}
+
+.schedule-style-nav p {
+  margin: 0 0 var(--space-s);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.schedule-style-nav .schedule-style-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+  margin: 0;
+}
+
+.schedule-style-nav .schedule-style-links a {
+  font-size: 0.875rem;
+}
+
+/* Style A: Minimal month grid */
+.schedule-style-a .calendar-wrap {
+  max-width: 22rem;
+  margin-bottom: var(--space-l);
+}
+
+.schedule-style-a .calendar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-m);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.schedule-style-a .calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  font-size: 0.875rem;
+}
+
+.schedule-style-a .calendar-grid .day-name {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  padding: var(--space-xs) 0;
+}
+
+.schedule-style-a .calendar-grid .day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.375rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.schedule-style-a .calendar-grid .day.other-month {
+  color: var(--color-text-muted);
+  opacity: 0.6;
+}
+
+.schedule-style-a .calendar-grid .day.available {
+  background: var(--color-accent-soft);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+.schedule-style-a .calendar-grid .day.today {
+  border-color: var(--color-accent);
+  border-width: 2px;
+}
+
+.schedule-style-a .times-heading {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin: var(--space-xl) 0 var(--space-s);
+}
+
+.schedule-style-a .time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+}
+
+.schedule-style-a .time-slot {
+  padding: var(--space-s) var(--space-m);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+
+.schedule-style-a .time-slot.available {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+.schedule-style-a .time-slot.booked {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Style B: Week view with time column */
+.schedule-style-b .calendar-week {
+  display: grid;
+  grid-template-columns: 4rem 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 36rem;
+}
+
+.schedule-style-b .week-header {
+  display: contents;
+}
+
+.schedule-style-b .week-header .cell {
+  background: var(--color-surface);
+  padding: var(--space-s) var(--space-m);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.schedule-style-b .week-header .cell:first-child {
+  text-align: right;
+  color: var(--color-text-muted);
+}
+
+.schedule-style-b .week-row {
+  display: contents;
+}
+
+.schedule-style-b .week-row .cell {
+  padding: var(--space-m);
+  font-size: 0.875rem;
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-bg);
+}
+
+.schedule-style-b .week-row .cell:first-child {
+  text-align: right;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  background: var(--color-surface);
+}
+
+.schedule-style-b .week-row .slot-available {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.schedule-style-b .week-row .slot-booked {
+  background: var(--color-surface);
+  color: var(--color-text-muted);
+  opacity: 0.7;
+}
+
+/* Style C: Card list — pick date then time cards */
+.schedule-style-c .schedule-step {
+  margin-bottom: var(--space-2xl);
+}
+
+.schedule-style-c .schedule-step h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 var(--space-m);
+}
+
+.schedule-style-c .date-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+  margin-bottom: var(--space-l);
+}
+
+.schedule-style-c .date-card {
+  padding: var(--space-m) var(--space-l);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+  min-width: 5rem;
+}
+
+.schedule-style-c .date-card .date-day {
+  display: block;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--color-text);
+}
+
+.schedule-style-c .date-card .date-weekday {
+  display: block;
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+}
+
+.schedule-style-c .date-card.selected {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+.schedule-style-c .time-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-s);
+}
+
+.schedule-style-c .time-card {
+  padding: var(--space-s) var(--space-l);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  font-size: 0.9375rem;
+}
+
+.schedule-style-c .time-card.available {
+  border-color: var(--color-accent);
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+.schedule-style-c .time-card.booked {
+  opacity: 0.5;
+}
+
+/* Hub page */
+.schedule-hub .schedule-style-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-m);
+  margin: var(--space-l) 0;
+}
+
+.schedule-hub .schedule-note {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+}

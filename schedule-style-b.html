@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule — Style B (week view)</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/schedule.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" class="nav-logo">Voice Therapy</a>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="voice-therapy.html">Voice Therapy</a></li>
+        <li><a href="current-events.html">Current Events</a></li>
+        <li><a href="schedule.html" aria-current="page">Schedule</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main schedule-mockup schedule-style-b">
+    <article class="content">
+      <div class="schedule-intro">
+        <h1>Book a session</h1>
+        <p class="lead">Pick a time from the week view. (Mockup — Style B: week view.)</p>
+      </div>
+
+      <nav class="schedule-style-nav" aria-label="Calendar style options">
+        <p>Choose a different style:</p>
+        <div class="schedule-style-links">
+          <a href="schedule-style-a.html" class="btn btn-secondary">Style A</a>
+          <a href="schedule-style-b.html" class="btn btn-primary" aria-current="page">Style B</a>
+          <a href="schedule-style-c.html" class="btn btn-secondary">Style C</a>
+        </div>
+      </nav>
+
+      <div class="calendar-week" role="grid" aria-label="Week of March 10, 2025">
+        <div class="week-header">
+          <span class="cell"></span>
+          <span class="cell">Mon 10</span>
+          <span class="cell">Tue 11</span>
+          <span class="cell">Wed 12</span>
+          <span class="cell">Thu 13</span>
+          <span class="cell">Fri 14</span>
+          <span class="cell">Sat 15</span>
+        </div>
+        <div class="week-row">
+          <span class="cell">9:00</span>
+          <span class="cell slot-booked">—</span>
+          <span class="cell slot-available">Free</span>
+          <span class="cell slot-available">Free</span>
+          <span class="cell">—</span>
+          <span class="cell slot-available">Free</span>
+          <span class="cell">—</span>
+        </div>
+        <div class="week-row">
+          <span class="cell">9:30</span>
+          <span class="cell slot-booked">—</span>
+          <span class="cell slot-available">Free</span>
+          <span class="cell slot-booked">—</span>
+          <span class="cell">—</span>
+          <span class="cell slot-available">Free</span>
+          <span class="cell">—</span>
+        </div>
+        <div class="week-row">
+          <span class="cell">10:00</span>
+          <span class="cell slot-available">Free</span>
+          <span class="cell slot-available">Free</span>
+          <span class="cell slot-available">Free</span>
+          <span class="cell slot-available">Free</span>
+          <span class="cell slot-booked">—</span>
+          <span class="cell">—</span>
+        </div>
+        <div class="week-row">
+          <span class="cell">10:30</span>
+          <span class="cell slot-available">Free</span>
+          <span class="cell slot-booked">—</span>
+          <span class="cell slot-available">Free</span>
+          <span class="cell slot-available">Free</span>
+          <span class="cell">—</span>
+          <span class="cell">—</span>
+        </div>
+        <div class="week-row">
+          <span class="cell">11:00</span>
+          <span class="cell slot-booked">—</span>
+          <span class="cell slot-available">Free</span>
+          <span class="cell slot-available">Free</span>
+          <span class="cell">—</span>
+          <span class="cell">—</span>
+          <span class="cell">—</span>
+        </div>
+      </div>
+      <p style="margin-top: var(--space-l); font-size: 0.875rem; color: var(--color-text-muted);">Green = available. Click a slot to book. (Mockup only.)</p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <p>This practice runs on donations and mutual aid. We support and highlight the artists in our community.</p>
+    <p><a href="contact.html">Contact</a></p>
+  </footer>
+</body>
+</html>
