@@ -3,14 +3,15 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&display=swap");
 
 :root {
-  --color-bg: #f7f6f3;
+  --color-bg: #fafafa;
   --color-surface: #ffffff;
   --color-text: #1c1c1c;
   --color-text-muted: #5c5c5c;
-  --color-accent: #3d6b5a;
-  --color-accent-dark: #2d5244;
-  --color-accent-soft: #e6f0eb;
-  --color-warm: #f0ebe3;
+  --color-accent: #c97a9a;
+  --color-accent-dark: #a85f7d;
+  --color-accent-soft: #fce8f0;
+  --color-blue-soft: #e3f0fa;
+  --color-warm: #f5eef2;
   --color-border: #e4e0d8;
   --color-ink: #141414;
   --font-sans: "DM Sans", system-ui, sans-serif;
@@ -70,16 +71,39 @@ body {
 }
 
 .nav-logo {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.25rem;
-  color: var(--color-ink);
+  display: flex;
+  align-items: center;
   text-decoration: none;
-  letter-spacing: -0.02em;
 }
 
-.nav-logo:hover {
-  color: var(--color-accent);
+.nav-logo-img {
+  height: 3.25rem;
+  width: auto;
+  display: block;
+}
+
+.nav-logo:hover .nav-logo-img {
+  opacity: 0.9;
+}
+
+.hero-logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  box-shadow: none;
+  min-height: auto;
+}
+
+.hero-visual.hero-logo-wrap {
+  box-shadow: none;
+}
+
+.hero-logo {
+  max-width: 20rem;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .nav-links {
@@ -117,7 +141,7 @@ main {
 
 /* Hero — full-width band */
 .hero-band {
-  background: linear-gradient(135deg, var(--color-accent-soft) 0%, var(--color-warm) 100%);
+  background: linear-gradient(135deg, var(--color-accent-soft) 0%, var(--color-blue-soft) 100%);
   border-bottom: 1px solid var(--color-border);
   padding: var(--space-3xl) var(--space-xl);
 }
@@ -337,7 +361,7 @@ main {
 
 /* Mutual aid strip */
 .mutual-aid-strip {
-  background: var(--color-accent);
+  background: linear-gradient(90deg, var(--color-accent) 0%, #8eb8d8 100%);
   color: #fff;
   padding: var(--space-xl) var(--space-xl);
   text-align: center;
@@ -585,7 +609,30 @@ main {
   color: rgba(255, 255, 255, 0.9);
 }
 
-/* Legacy schedule pages */
+/* Cal.com embed */
+.cal-embed-wrap {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  min-height: 42rem;
+}
+
+.cal-embed {
+  width: 100%;
+  height: 42rem;
+  border: 0;
+  display: block;
+}
+
+.cal-embed-note {
+  margin-top: var(--space-l);
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
 .page-main {
   max-width: var(--max-width);
   margin: 0 auto;

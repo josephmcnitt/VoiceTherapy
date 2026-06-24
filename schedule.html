@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Schedule — Your Voice Therapy</title>
+  <title>Schedule — Your Voice Therapy LLC</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/schedule.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="nav" aria-label="Main">
-      <a href="index.html" class="nav-logo">Your Voice Therapy</a>
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="Your Voice Therapy LLC" class="nav-logo-img">
+      </a>
       <ul class="nav-links">
         <li><a href="services.html">Services</a></li>
         <li><a href="resources.html">Resources</a></li>
@@ -22,27 +24,33 @@
     </nav>
   </header>
 
-  <main class="page-main schedule-hub">
-    <article class="content">
-      <h1>Book a session</h1>
-      <p class="lead">Scheduling calendar mockup — pick a style below to preview. Not connected to a real booking system yet.</p>
+  <main>
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <h1>Book a session</h1>
+        <p class="lead">Pick a time below—availability updates in real time when someone books.</p>
+      </div>
+    </div>
 
-      <p class="schedule-style-links">
-        <a href="schedule-style-a.html" class="btn btn-primary">Style A — Minimal grid</a>
-        <a href="schedule-style-b.html" class="btn btn-secondary">Style B — Week view</a>
-        <a href="schedule-style-c.html" class="btn btn-secondary">Style C — Card list</a>
-      </p>
-
-      <p class="schedule-note">Each link opens a mockup of the same calendar in a different visual style. Choose the one you like best.</p>
-    </article>
+    <div class="page-wrap">
+      <div class="cal-embed-wrap">
+        <iframe
+          src="https://cal.com/yourvoicetherapy/30min?embed=true&theme=light"
+          class="cal-embed"
+          title="Book a 30-minute session with Your Voice Therapy"
+          allow="payment"
+        ></iframe>
+      </div>
+      <p class="cal-embed-note">Looking for other options? <a href="https://cal.com/yourvoicetherapy" target="_blank" rel="noopener">View all booking types at cal.com/yourvoicetherapy</a>.</p>
+    </div>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
       <div>
-        <p class="footer-brand">Your Voice Therapy</p>
+        <p class="footer-brand">Your Voice Therapy LLC</p>
         <p class="footer-tagline">Trans-owned. Trans-run. For trans people—and families who need speech care.</p>
-        <p><a href="mailto:emmcnitt14@gmail.com">emmcnitt14@gmail.com</a></p>
+        <p><a href="mailto:findyourvoicetherapy@gmail.com">findyourvoicetherapy@gmail.com</a></p>
       </div>
       <nav class="footer-nav" aria-label="Footer">
         <a href="services.html">Services</a>
